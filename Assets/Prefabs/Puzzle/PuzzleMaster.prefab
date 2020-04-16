@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8456972769473475547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8456972769473475551}
+  - component: {fileID: 8456972769473475550}
+  - component: {fileID: 8456972769473475545}
+  - component: {fileID: 8456972769473475544}
+  m_Layer: 0
+  m_Name: PuzzleMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8456972769473475551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456972769473475547}
+  m_LocalRotation: {x: 0.17043605, y: 0.6023143, z: 0.21233638, w: 0.7503881}
+  m_LocalPosition: {x: -8.96375, y: -0.5864376, z: 0.4022851}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8456972769473475550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456972769473475547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2b4a2fd7837fc44a3c1e92762b8e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8456972769473475545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456972769473475547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a0209ab62cddf449659a26fbc1aca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleObjects:
+  - {fileID: 1571022584203405917, guid: 28173b2d6fc225e45a51bd3f6fec57b1, type: 3}
+  - {fileID: 9039863079524956792, guid: 7b29b8f6161e17e4c9d4b72020bfdc16, type: 3}
+  - {fileID: 1213184269998835035, guid: 2f7874c4bdc59ba44a37a173fede88c8, type: 3}
+  - {fileID: 3423998979857799391, guid: 970dd643fb73a9945b3a13cccbc2e028, type: 3}
+  clueObjects:
+  - {fileID: 917043073848690218, guid: a4fb26f1863a1fc429b3d24b79c81663, type: 3}
+  startClueNode: {fileID: 0}
+--- !u!114 &8456972769473475544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456972769473475547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be64890bcd28ec447ab0e6446748ca8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
