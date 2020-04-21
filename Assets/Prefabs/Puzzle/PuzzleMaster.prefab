@@ -61,7 +61,7 @@ MonoBehaviour:
   - {fileID: 1571022584203405917, guid: 28173b2d6fc225e45a51bd3f6fec57b1, type: 3}
   - {fileID: 9039863079524956792, guid: 7b29b8f6161e17e4c9d4b72020bfdc16, type: 3}
   - {fileID: 1213184269998835035, guid: 2f7874c4bdc59ba44a37a173fede88c8, type: 3}
-  - {fileID: 3423998979857799391, guid: 970dd643fb73a9945b3a13cccbc2e028, type: 3}
+  - {fileID: 713872314665973533, guid: 8d60ede003ab8bf4a94b78c095382825, type: 3}
   clueObjects:
   - {fileID: 917043073848690218, guid: a4fb26f1863a1fc429b3d24b79c81663, type: 3}
   startClueNode: {fileID: 0}

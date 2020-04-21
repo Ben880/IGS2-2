@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ChromeSatinScratched 1
+  m_Name: PipeReactor
   m_Shader: {fileID: -6465566751694194690, guid: c32246d7188b3ca45a6e778726c019de,
     type: 3}
   m_ShaderKeywords: 
@@ -115,7 +115,7 @@ Material:
     - Boolean_77E75FAA: 0
     - Boolean_F2394607: 0
     - Vector1_20B60D22: 0.1
-    - Vector1_2E810D38: 0.775
+    - Vector1_2E810D38: 0.49
     - Vector1_7EB7D62C: 1
     - Vector1_A9269C49: 0.1688311
     - Vector1_BB4DD4C5: 0.043
