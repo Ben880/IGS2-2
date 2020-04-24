@@ -338,8 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eafcdaf63b5c1a47a91f3fba5527dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matTrue: {fileID: 2100000, guid: 4bd4fb4d595ab0e4ca6bb578690f7def, type: 2}
-  matFalse: {fileID: 2100000, guid: 61f3f76ce1bd1d24e93b3784533b56b0, type: 2}
+  matTrue: {fileID: 2100000, guid: dfda1301f8289e74e831e0aa643aec18, type: 2}
+  matFalse: {fileID: 2100000, guid: 12caa9536cc1a3d45bf0a6f362ceb525, type: 2}
   startingState: 0
   key: Unsolved
 --- !u!114 &1378154037264686701
@@ -539,7 +539,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4bd4fb4d595ab0e4ca6bb578690f7def, type: 2}
+  - {fileID: 2100000, guid: 12caa9536cc1a3d45bf0a6f362ceb525, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1819,6 +1819,7 @@ GameObject:
   - component: {fileID: 1378154038469184202}
   - component: {fileID: 1378154038469184201}
   - component: {fileID: 1378154038469184200}
+  - component: {fileID: 6910490866935084700}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -2037,7 +2038,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 0426afc326ee9e04e83efd5e43a4dc55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2072,6 +2073,14 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!33 &6910490866935084700
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378154038469184206}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1378154038503885223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +2095,7 @@ GameObject:
   - component: {fileID: 1378154038503885219}
   - component: {fileID: 1378154038503885218}
   - component: {fileID: 1378154038503885217}
+  - component: {fileID: 1895371615513931850}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -2119,8 +2129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eafcdaf63b5c1a47a91f3fba5527dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matTrue: {fileID: 0}
-  matFalse: {fileID: 0}
+  matTrue: {fileID: 2100000, guid: 61f3f76ce1bd1d24e93b3784533b56b0, type: 2}
+  matFalse: {fileID: 2100000, guid: 4bd4fb4d595ab0e4ca6bb578690f7def, type: 2}
   startingState: 0
   key: Solved
 --- !u!114 &1378154038503885228
@@ -2320,7 +2330,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4bd4fb4d595ab0e4ca6bb578690f7def, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2355,6 +2365,14 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!33 &1895371615513931850
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378154038503885223}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1378154039024262842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,6 +2386,7 @@ GameObject:
   - component: {fileID: 1378154039024262789}
   - component: {fileID: 1378154039024262788}
   - component: {fileID: 1378154039024262843}
+  - component: {fileID: 4752807278463305442}
   m_Layer: 0
   m_Name: Display
   m_TagString: Untagged
@@ -3260,7 +3279,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 8b33185bfff9b804db8e451b16c687af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3294,6 +3313,14 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!33 &4752807278463305442
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378154039024262842}
   m_Mesh: {fileID: 0}
 --- !u!1 &9039863078789237366
 GameObject:

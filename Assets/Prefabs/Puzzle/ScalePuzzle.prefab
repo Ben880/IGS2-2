@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450880015532081058}
+  - component: {fileID: 3368048671600748220}
   m_Layer: 0
   m_Name: ScalePuzzle
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713872314665973533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1273017, y: 0.72262794, z: -0.049548388}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6674972486525467287}
@@ -33,6 +34,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3368048671600748220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713872314665973533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a42ee0cdc85af458cb5bb2e52ae27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeType: 0
+  inputType: 0
+  puzzleLength: 4
+  correctSound: {fileID: 8300000, guid: 78ff04c852cbd964294bd15fa1743cba, type: 3}
+  incorrectSound: {fileID: 8300000, guid: 1b219e8c59f7ca041866f7a574394d87, type: 3}
+  displayMesh: {fileID: 6674972486032582215}
+  tensMax: 2
+  onesMax: 3
+  tenthsMax: 4
+  hundredthsMax: 5
 --- !u!1 &3187380527249465726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eca8834a567250498a6a27f0ae3e883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePZ: {fileID: 6674972486525467281}
+  basePZ: {fileID: 0}
   acceptIdentifier: Weight
 --- !u!1 &6674972486032582213
 GameObject:
@@ -1680,7 +1703,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6674972486525467287}
-  - component: {fileID: 6674972486525467281}
   - component: {fileID: 2941397573254360630}
   m_Layer: 0
   m_Name: Scale
@@ -1706,28 +1728,6 @@ Transform:
   m_Father: {fileID: 450880015532081058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6674972486525467281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6674972486525467274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a42ee0cdc85af458cb5bb2e52ae27c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeType: 0
-  inputType: 0
-  puzzleLength: 4
-  correctSound: {fileID: 8300000, guid: 78ff04c852cbd964294bd15fa1743cba, type: 3}
-  incorrectSound: {fileID: 8300000, guid: 1b219e8c59f7ca041866f7a574394d87, type: 3}
-  displayMesh: {fileID: 6674972486032582215}
-  tensMax: 2
-  onesMax: 3
-  tenthsMax: 4
-  hundredthsMax: 5
 --- !u!82 &2941397573254360630
 AudioSource:
   m_ObjectHideFlags: 0

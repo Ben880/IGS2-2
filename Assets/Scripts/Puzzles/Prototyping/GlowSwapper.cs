@@ -26,31 +26,39 @@ public class GlowSwapper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hoverEvents = transform.parent.gameObject.GetComponent<InteractableHoverEvents>();
-        hoverEvents.onHandHoverBegin.AddListener(OnHoverStart);
-        hoverEvents.onHandHoverEnd.AddListener(OnHoverEnd);
-        mr = GetComponent<Renderer>();
-        origionalMaterials = mr.materials;
-        glowMaterials = new Material[origionalMaterials.Length];
-        for (int i = 0; i < origionalMaterials.Length; i++)
+        try
         {
-            switch (type)
+            hoverEvents = transform.parent.gameObject.GetComponent<InteractableHoverEvents>();
+            hoverEvents.onHandHoverBegin.AddListener(OnHoverStart);
+            hoverEvents.onHandHoverEnd.AddListener(OnHoverEnd);
+            mr = GetComponent<Renderer>();
+            origionalMaterials = mr.materials;
+            glowMaterials = new Material[origionalMaterials.Length];
+            for (int i = 0; i < origionalMaterials.Length; i++)
             {
-                case ShaderType.Default:
-                    glowMaterials[i] = new Material(Shader.Find(glowMaterial.shader.name));
-                    glowMaterials[i].SetTexture("GlowBaseTexture", origionalMaterials[i].mainTexture);
-                    glowMaterials[i].SetColor("GlowBaseColor", origionalMaterials[i].color);
-                    break;
-                case ShaderType.WoodShader:
-                    glowMaterials[i] = new Material(Shader.Find(glowMaterial.shader.name));
-                    glowMaterials[i].SetTexture("GlowBaseTexture", origionalMaterials[i].GetTexture("Texture2D_CD56FE87"));
-                    Color c = origionalMaterials[i].GetColor("Color_A657990C");
-                    c.a = 1;
-                    glowMaterials[i].SetColor("GlowBaseColor", c);
-                    break;
-            }
+                switch (type)
+                {
+                    case ShaderType.Default:
+                        glowMaterials[i] = new Material(Shader.Find(glowMaterial.shader.name));
+                        glowMaterials[i].SetTexture("GlowBaseTexture", origionalMaterials[i].mainTexture);
+                        glowMaterials[i].SetColor("GlowBaseColor", origionalMaterials[i].color);
+                        break;
+                    case ShaderType.WoodShader:
+                        glowMaterials[i] = new Material(Shader.Find(glowMaterial.shader.name));
+                        glowMaterials[i].SetTexture("GlowBaseTexture", origionalMaterials[i].GetTexture("Texture2D_CD56FE87"));
+                        Color c = origionalMaterials[i].GetColor("Color_A657990C");
+                        c.a = 1;
+                        glowMaterials[i].SetColor("GlowBaseColor", c);
+                        break;
+                }
             
+            }
         }
+        catch (Exception e)
+        {
+            Debug.LogError("Error: " + e.StackTrace, this);
+        }
+        
     }
 
     // Update is called once per frame
