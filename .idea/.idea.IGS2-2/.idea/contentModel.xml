@@ -30,9 +30,6 @@
             </e>
           </e>
         </e>
-        <e p="Scenes" t="Include">
-          <e p="AutoSwitcher.cs" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="Puzzles" t="Include">
             <e p="Clue" t="Include">
@@ -66,11 +63,12 @@
               <e p="SwapStateMat.cs" t="Include" />
             </e>
           </e>
-          <e p="SimpleCameraController.cs" t="Include" />
           <e p="Tools" t="Include">
+            <e p="DDOLController.cs" t="Include" />
             <e p="EmmisiveControler.cs" t="Include" />
             <e p="lightflicker.cs" t="Include" />
             <e p="OPD_Mesh.cs" t="Include" />
+            <e p="RoomSwitcher.cs" t="Include" />
             <e p="TeleportOnCollide.cs" t="Include" />
             <e p="TimerCountdown.cs" t="Include" />
             <e p="TMP_Random.cs" t="Include" />
@@ -399,14 +397,6 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
-          </e>
-        </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -389,4 +389,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMaterial: {fileID: 2100000, guid: e8a8971302298a748a6c9eff7d7c4cb4, type: 2}
-  type: 0
+  type: 1

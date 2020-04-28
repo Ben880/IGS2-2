@@ -35,8 +35,9 @@ public class PZ_Base : MonoBehaviour
         if (solveCondition.Count == 0)
         {
             defaultGenerate();
-            Debug.Log("LateUpdate reached with no puzzle setting default" + genericSolveString());
+            //Debug.Log("LateUpdate reached with no puzzle setting default" + genericSolveString());
         }
+        
     }
     //========================================================
     //================== Get/Set  ============================
@@ -46,7 +47,12 @@ public class PZ_Base : MonoBehaviour
         get { return solveString; }
         set { solveString = value; }
     }
-    public bool Solved { get{return solved;}}
+
+    public bool Solved
+    {
+        get{return solved;}
+        set { solved = value; }
+    }
     public int PuzzleLength
     {
         get { return puzzleLength; }
@@ -70,7 +76,7 @@ public class PZ_Base : MonoBehaviour
     //========================================================
     public virtual void generateCondition()
     {
-        Debug.Log("No set generate method returning default 5 count list 0-9");
+        //Debug.Log("No set generate method returning default 5 count list 0-9");
         solveCondition = getConditionInFormat(5,0,10);
     }
     public virtual void updatePuzzleDisplay() { }
@@ -104,7 +110,7 @@ public class PZ_Base : MonoBehaviour
 
     protected string genericSolveString()
     {
-        Debug.Log("genericSolveString()", this);
+        //Debug.Log("genericSolveString()", this);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < solveCondition.Count; i++)
         {
@@ -116,7 +122,7 @@ public class PZ_Base : MonoBehaviour
 
     protected void genericCheckSolved()
     {
-        Debug.Log("genericCheckSolved()", this);
+        //Debug.Log("genericCheckSolved()", this);
         if (!solved && genericSolveTest())
         {
             solved = true;
@@ -133,13 +139,13 @@ public class PZ_Base : MonoBehaviour
         Debug.Log("genericSolveTest()", this);
         if (entered.Count != solveCondition.Count)
         {
-            Debug.Log("entered length differs from actual");
+            //Debug.Log("entered length differs from actual");
             return false;
         }
             
         for (int i = 0; i < entered.Count; i++)
         {
-            Debug.Log($"Testing {entered[i]} and {solveCondition[i]}");
+            //Debug.Log($"Testing {entered[i]} and {solveCondition[i]}");
             if (entered[i] != solveCondition[i])
                 return false;
         }
@@ -168,6 +174,7 @@ public class PZ_Base : MonoBehaviour
         audioSorce.Stop();
         audioSorce.clip = incorrectSound;
         audioSorce.Play();
+        Debug.Log("play incorrect sound", this);
     }
 
     protected void playSound(AudioClip clip)

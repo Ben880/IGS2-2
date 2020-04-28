@@ -46,7 +46,7 @@ public class GlowSwapper : MonoBehaviour
                     case ShaderType.WoodShader:
                         glowMaterials[i] = new Material(Shader.Find(glowMaterial.shader.name));
                         glowMaterials[i].SetTexture("GlowBaseTexture", origionalMaterials[i].GetTexture("Texture2D_CD56FE87"));
-                        Color c = origionalMaterials[i].GetColor("Color_A657990C");
+                        Color c = origionalMaterials[i].GetColor("Color_4F4ED3A9");
                         c.a = 1;
                         glowMaterials[i].SetColor("GlowBaseColor", c);
                         break;

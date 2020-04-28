@@ -11,7 +11,19 @@ public class PZ_Master : MonoBehaviour
     private PZ_Nodes nodes;
     private List<PZ_Node> createdNodes = new List<PZ_Node>();
     private bool started = false;
-    
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            foreach (var node in createdNodes)
+            {
+                node.NodeObject.GetComponent<PZ_Base>().Solved = true;
+            }
+        }
+    }
+
     //========================================================
     //================== Logic  ==============================
     //========================================================
@@ -39,6 +51,16 @@ public class PZ_Master : MonoBehaviour
         getPriorRewardPZBase().SolveString = getCurrentPZB().getClueString();
         Debug.Log("Current puzzle string: " +getCurrentPZB().getClueString());
         getPriorRewardPZBase().updatePuzzleDisplay();
+    }
+
+    public bool allSolved()
+    {
+        foreach (var node in createdNodes)
+        {
+            if (!node.NodeObject.GetComponent<PZ_Base>().Solved)
+                return false;
+        }
+        return true;
     }
     //========================================================
     //============= Unity Functions  =========================
