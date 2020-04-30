@@ -15,11 +15,16 @@ public class PZ_Registry : MonoBehaviour
     //=======================================================
     public GameObject getRandomPuzzle()
     {
-        return puzzleObjects[UnityEngine.Random.Range(0, puzzleObjects.Count)];
+        return getRandomPuzzleOfType(getRandomType());
     }
     public GameObject getRandomPuzzleOfType(PZ_Type type)
     {
-        return puzzleDict[type][UnityEngine.Random.Range(0, puzzleDict[type].Count)];
+        if (puzzleDict[type].Count == 0)
+            repopulatePuzzleList(type);
+        int tmp = UnityEngine.Random.Range(0, puzzleDict[type].Count);
+        GameObject tmpObj = puzzleDict[type][tmp];
+        puzzleDict[type].RemoveAt(tmp);
+        return tmpObj;
     }
     public GameObject getRandomClue()
     {
@@ -31,7 +36,15 @@ public class PZ_Registry : MonoBehaviour
     }
     public PZ_Type getRandomType()
     {
-        return (PZ_Type) UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(PZ_Type)).Length);
+        PZ_Type tmp = PZ_Type.String;
+        bool invalid = true;
+        while (invalid)
+        {
+            tmp = (PZ_Type) UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(PZ_Type)).Length);
+            if (puzzleDict[tmp].Count > 0)
+                invalid = false;
+        }
+        return (PZ_Type) tmp;
     }
     //========================================================
     //============= Accessing Variables  =====================
@@ -64,6 +77,14 @@ public class PZ_Registry : MonoBehaviour
             clueDict[clue.GetComponent<PZ_Base>().InputType].Add(clue);
         }
     }
+    private void repopulatePuzzleList(PZ_Type type)
+    {
+        foreach (var puzzle in puzzleObjects)
+        {
+            if (type == puzzle.GetComponent<PZ_Base>().InputType)
+                puzzleDict[type].Add(puzzle);
+        }
+    }
     //========================================================
     //============= Unity Functions  =========================
     //========================================================
@@ -81,7 +102,7 @@ public class PZ_Registry : MonoBehaviour
     {
         return;
         if (startClueNode == null)
-            Debug.Log("No starting clue");
+            Debug.Log("No starting clue", gameObject);
         if (puzzleObjects.Count == 0)
             Debug.LogError("There are no puzzles", gameObject);
         else
