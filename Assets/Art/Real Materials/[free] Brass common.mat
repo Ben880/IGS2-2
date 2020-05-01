@@ -49,11 +49,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap0:
         m_Texture: {fileID: 2800000, guid: 164a978944f7c854f945f6f68aa1d515, type: 3}
-        m_Scale: {x: 0.2, y: 0.2}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap1:
         m_Texture: {fileID: 2800000, guid: 4389a51a059459943a305bfd18f6f410, type: 3}
-        m_Scale: {x: 0.66, y: 0.66}
+        m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap2:
         m_Texture: {fileID: 0}
@@ -125,7 +125,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailMap1:
         m_Texture: {fileID: 2800000, guid: 9b74db50026cc754782a13484d98d357, type: 3}
-        m_Scale: {x: 0.93, y: 0.93}
+        m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     - _DetailMap2:
         m_Texture: {fileID: 0}
@@ -354,7 +354,7 @@ Material:
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailAlbedoScale0: 1
-    - _DetailAlbedoScale1: 0.501
+    - _DetailAlbedoScale1: 0.46
     - _DetailAlbedoScale2: 1
     - _DetailAlbedoScale3: 1
     - _DetailNormalMapScale: 0.3
@@ -365,7 +365,7 @@ Material:
     - _DetailNormalScale3: 1
     - _DetailSmoothnessScale: 1
     - _DetailSmoothnessScale0: 1
-    - _DetailSmoothnessScale1: 0.412
+    - _DetailSmoothnessScale1: 2
     - _DetailSmoothnessScale2: 1
     - _DetailSmoothnessScale3: 1
     - _DiffusionProfile: 0
@@ -471,8 +471,8 @@ Material:
     - _InheritBaseNormal3: 0
     - _InitialBend: 1
     - _InvTilingScale: 1.5151515
-    - _InvTilingScale0: 5
-    - _InvTilingScale1: 1.5151515
+    - _InvTilingScale0: 1
+    - _InvTilingScale1: 3.3333333
     - _InvTilingScale2: 1
     - _InvTilingScale3: 1
     - _Ior: 1
@@ -525,7 +525,7 @@ Material:
     - _Smoothness3: 0.5
     - _SmoothnessRemapMax: 0.87681764
     - _SmoothnessRemapMax0: 1
-    - _SmoothnessRemapMax1: 0.84602225
+    - _SmoothnessRemapMax1: 0.8460223
     - _SmoothnessRemapMax2: 1
     - _SmoothnessRemapMax3: 1
     - _SmoothnessRemapMin: 0.24978614
