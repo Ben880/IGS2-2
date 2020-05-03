@@ -49,7 +49,7 @@ public class PZ_Nodes : MonoBehaviour
     //========================================================
     //============= Unity Functions  =========================
     //========================================================
-    void Start()
+    void Awake()
     {
         foreach (var node in GameObject.FindGameObjectsWithTag("PuzzleNode"))
         {
