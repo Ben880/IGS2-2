@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
   m_Name: HDRISky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   rotation:
     m_OverrideState: 0
@@ -172,17 +172,17 @@ MonoBehaviour:
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 0.46607146
+    m_Value: 0.6591026
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.18750611, y: 0.29181966, z: 0.5}
+    m_Value: {x: 0.42404458, y: 0.46032986, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 0
     m_Value: 20000
   updateMode:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   updatePeriod:
     m_OverrideState: 0
     m_Value: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 54a3a0570aebe8949bec4966f1376581, type: 3}
+    m_Value: {fileID: 8900000, guid: a0f3d916d77c838439a9dd47841ccd52, type: 3}
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.8
     min: 0
   intensity:
     m_OverrideState: 1
