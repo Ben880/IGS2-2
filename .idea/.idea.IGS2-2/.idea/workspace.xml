@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d32a10-f428-4c84-9c9e-27d196c4fe16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Construction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Construction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Nodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Nodes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportAreaVisible.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportAreaVisible.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.progrids/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.progrids/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzles/Tools/PZ_ZoneInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/GlowSwapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Nodes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.2.3/Runtime/Core/ProBuilderMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/RoomSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,7 +86,8 @@
       <workItem from="1588046006080" duration="1206000" />
       <workItem from="1588288068591" duration="833000" />
       <workItem from="1588538355506" duration="21000" />
-      <workItem from="1588538712835" duration="363000" />
+      <workItem from="1588538712835" duration="913000" />
+      <workItem from="1588634776437" duration="775000" />
     </task>
     <servers />
   </component>
@@ -115,5 +110,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="5" key="#Plugins" timestamp="1588538801306">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="5" key="#Plugins/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1588538801306" />
   </component>
 </project>
