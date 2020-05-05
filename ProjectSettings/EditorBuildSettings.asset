@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Hub.unity
     guid: 8d06b7d1c740ac44681f7a0bda19bd5d
   - enabled: 1
     path: Assets/Scenes/SciFi.unity
     guid: 117732a22e77c7648ade61b9da8be834
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Construction.unity
     guid: 6465695610ff49f47bcf09f48b96fc01
   m_configObjects: {}
