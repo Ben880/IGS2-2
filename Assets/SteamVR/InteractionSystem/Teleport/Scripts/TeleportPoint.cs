@@ -189,6 +189,7 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		public override void SetAlpha( float tintAlpha, float alphaPercent )
 		{
+			/*
 			tintColor = markerMesh.material.GetColor( tintColorID );
 			tintColor.a = tintAlpha;
 
@@ -199,6 +200,7 @@ namespace Valve.VR.InteractionSystem
 
 			titleColor.a = fullTitleAlpha * alphaPercent;
 			titleText.color = titleColor;
+			*/
 		}
 
 

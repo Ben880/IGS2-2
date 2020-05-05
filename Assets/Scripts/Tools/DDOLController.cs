@@ -7,36 +7,47 @@ public class DDOLController : MonoBehaviour
 {
     [SerializeField]
     private string lookForTag;
-    private bool checkedForOther = false;
+    
     [SerializeField]
-    private bool awakeState = false;
+    private GameObject localPlayer;
+    private GameObject locatedPlayer;
+    private GameObject activePlayer;
+    [SerializeField]
+    private Vector3 offsetPosition;
+
+    private bool exec = false;
     void Awake()
     {
-        switchChildren(awakeState);
+        localPlayer.SetActive(false);
+        locatedPlayer = GameObject.FindGameObjectWithTag(lookForTag);
+        if (locatedPlayer == null)
+        {
+            localPlayer.SetActive(true);
+            activePlayer = localPlayer;
+        }
+        else
+        {
+            activePlayer = locatedPlayer;
+        }
+        Valve.VR.OpenVR.System.ResetSeatedZeroPose();
+        Valve.VR.OpenVR.Compositor.SetTrackingSpace(Valve.VR.ETrackingUniverseOrigin.TrackingUniverseSeated);
+        UnityEngine.XR.InputTracking.Recenter();
+        activePlayer.transform.position = this.transform.position;
+        //activePlayer.transform.position = offsetPosition;
+        activePlayer.transform.position -= gameObject.transform.position- GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+        Debug.Log("DDOLC reached end awake", this);
     }
 
-    private void switchChildren(bool b)
+    void LateUpdate()
     {
-        for (int i = 0; i < transform.childCount; i++)
+        if (!exec)
         {
-            transform.GetChild(i).gameObject.SetActive(b);
+            Vector3 tmp = gameObject.transform.position - GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+            tmp.y = 0;
+            activePlayer.transform.position += tmp;
+            exec = true;
         }
     }
-    // Start is called before the first frame update
-    private void LateUpdate()
-    {
-        if (!checkedForOther)
-        {
-            GameObject other = GameObject.FindGameObjectWithTag(lookForTag);
-            if (other == null)
-            {
-                switchChildren(true);
-            }
-            else
-            {
-                other.transform.position = transform.GetChild(0).position;
-            }
-            checkedForOther = true;
-        }
-    }
+
+
 }

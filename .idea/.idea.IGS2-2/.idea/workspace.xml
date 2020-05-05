@@ -7,11 +7,11 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Construction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Construction.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Hub.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SciFi.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SciFi.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/[CameraRig].prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/[CameraRig].prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/vr_glove_left_model_slim.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/vr_glove_left_model_slim.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/vr_glove_right_model_slim.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/Prefabs/vr_glove_right_model_slim.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/DDOLController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/DDOLController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportPointer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportPointer.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/RoomSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/DDOLController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Registry.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +51,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Base.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Registry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Puzzles/PZ_Nodes.cs" />
+        <option value="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools/DDOLController.cs" />
       </list>
     </option>
@@ -65,6 +69,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -98,6 +103,7 @@
       <workItem from="1588538355506" duration="21000" />
       <workItem from="1588538712835" duration="913000" />
       <workItem from="1588634776437" duration="2105000" />
+      <workItem from="1588706748986" duration="3699000" />
     </task>
     <servers />
   </component>
@@ -126,5 +132,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="5" key="#Plugins/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1588538801306" />
+    <state x="184" y="9" width="996" height="710" key="SettingsEditor" timestamp="1588707397104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" width="996" height="710" key="SettingsEditor/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1588707397104" />
   </component>
 </project>
