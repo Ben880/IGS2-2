@@ -27,9 +27,14 @@ public class DDOLController : MonoBehaviour
     {
         if (!checkedForOther)
         {
-            if (GameObject.FindGameObjectWithTag(lookForTag) == null)
+            GameObject other = GameObject.FindGameObjectWithTag(lookForTag);
+            if (other == null)
             {
                 switchChildren(true);
+            }
+            else
+            {
+                other.transform.position = transform.GetChild(0).position;
             }
             checkedForOther = true;
         }
