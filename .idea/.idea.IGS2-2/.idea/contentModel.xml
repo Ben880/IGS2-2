@@ -38,7 +38,7 @@
               <e p="PZ_Paper.cs" t="Include" />
             </e>
             <e p="Prototyping" t="Include">
-              <e p="GlowSwapper.cs" t="Include" />
+              <e p="LegsOrientation.cs" t="Include" />
             </e>
             <e p="Puzzle" t="Include">
               <e p="PZ_Numpad.cs" t="Include" />
@@ -67,7 +67,9 @@
           <e p="Tools" t="Include">
             <e p="DDOLController.cs" t="Include" />
             <e p="EmmisiveControler.cs" t="Include" />
+            <e p="GlowSwapper.cs" t="Include" />
             <e p="lightflicker.cs" t="Include" />
+            <e p="OnButtonSound.cs" t="Include" />
             <e p="OPD_Mesh.cs" t="Include" />
             <e p="RoomSwitcher.cs" t="Include" />
             <e p="TeleportOnCollide.cs" t="Include" />
