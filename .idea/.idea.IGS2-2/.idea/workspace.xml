@@ -20,28 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d32a10-f428-4c84-9c9e-27d196c4fe16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGS2-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/AntonioTextures/hardwork.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/AntonioTextures/hardwork.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/WFC_Logo2020.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/WFC_Logo2020.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/SimonPuzzle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/SimonPuzzle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/Glow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/Glow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/Glow.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/Glow.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/GlowSwapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/GlowSwapper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/TeleportPointer.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/TeleportPointer.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/legs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzles/Prototyping/legs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_1.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Effects/tone_4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +119,7 @@
       <workItem from="1588634776437" duration="2105000" />
       <workItem from="1588706748986" duration="4021000" />
       <workItem from="1588798884387" duration="7000" />
-      <workItem from="1588876178636" duration="2662000" />
+      <workItem from="1588876178636" duration="3860000" />
     </task>
     <servers />
   </component>
