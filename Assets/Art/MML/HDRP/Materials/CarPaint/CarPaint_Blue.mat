@@ -20,6 +20,8 @@ Material:
   disabledShaderPasses:
   - MOTIONVECTORS
   - TransparentBackface
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -249,8 +251,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_CF7B3627: {r: 0.22745098, g: 0.1254902, b: 0.8117647, a: 0}
-    - Color_F141EB95: {r: 0.48799318, g: 1, b: 0.06132078, a: 0}
+    - Color_CF7B3627: {r: 0, g: 0.4, b: 0.8, a: 0}
+    - Color_F141EB95: {r: 0.7647233, g: 1, b: 0.5707547, a: 0}
     - Vector2_AB87CEC4: {r: 20, g: 20, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
@@ -268,6 +270,7 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!114 &2053999445319057073
 MonoBehaviour:
   m_ObjectHideFlags: 11

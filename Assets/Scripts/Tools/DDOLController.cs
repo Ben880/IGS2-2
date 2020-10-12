@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class DDOLController : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class DDOLController : MonoBehaviour
         {
             activePlayer = locatedPlayer;
         }
-        Valve.VR.OpenVR.System.ResetSeatedZeroPose();
+        //Valve.VR.OpenVR.System.ResetSeatedZeroPose();
         Valve.VR.OpenVR.Compositor.SetTrackingSpace(Valve.VR.ETrackingUniverseOrigin.TrackingUniverseSeated);
         UnityEngine.XR.InputTracking.Recenter();
         activePlayer.transform.position = this.transform.position;

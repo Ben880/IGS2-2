@@ -30,7 +30,11 @@ namespace Valve.VR.InteractionSystem
 		{
 			areaMesh = GetComponent<MeshRenderer>();
 
-			tintColorId = Shader.PropertyToID( "_TintColor" );
+#if UNITY_URP
+			tintColorId = Shader.PropertyToID( "_BaseColor" );
+#else
+			tintColorId = Shader.PropertyToID("_TintColor");
+#endif
 
 			CalculateBounds();
 		}
@@ -39,9 +43,9 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		public void Start()
 		{
-			//visibleTintColor = Teleport.instance.areaVisibleMaterial.GetColor( tintColorId );
-			//highlightedTintColor = Teleport.instance.areaHighlightedMaterial.GetColor( tintColorId );
-			//lockedTintColor = Teleport.instance.areaLockedMaterial.GetColor( tintColorId );
+			visibleTintColor = Teleport.instance.areaVisibleMaterial.GetColor( tintColorId );
+			highlightedTintColor = Teleport.instance.areaHighlightedMaterial.GetColor( tintColorId );
+			lockedTintColor = Teleport.instance.areaLockedMaterial.GetColor( tintColorId );
 		}
 
 
